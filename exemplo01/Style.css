@@ -1,0 +1,17 @@
+body {
+    font-family: cursive;
+    color: #fff;
+}
+h1{
+    background-color: tomato;
+}
+p {
+   background-color: darkcyan;
+}
+.centralizado{
+   text-align: center;
+   font-size: 25px;
+   width: 300px;
+   margin: auto;
+   background-color: darkorange;
+}

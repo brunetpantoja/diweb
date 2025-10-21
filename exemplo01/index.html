@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Exemplo 01</title>
-</head>
 <body>
-    <h1>Trabalhando com formulários - Input do tipo text</h1>
-    <form method="post">
-    <label for="nome">Nome</label>
-    <input 
-    
-    type="nome"
-    name="nome"
-    id="nome"
-    maxlength="50"
-    size="50"
-    placeholder="Informe seu nome.">
+    <form method="get">
+    <label for="numero">Número</label>
+    <input type="number" name="numero" min="5" max="10" value="3"
+     required autofocus>
+   <label for="telefone">Telefone</label>
+   <input type="tel" name="telefone" id="telefone">
+   <hr>
+   <label for="datanascimento">Data de Nascimento</label>
+   <input type="date" name="datanascimento" id="datanascimento" min="1970-01-01">
+   <br>
+   <label for="dataehora">Data e Hora</label>
+   <input type="datetime-local" name="dataehora" id="dataehora">
+   <br>
+   <label for="hora">Hora</label>
+   <input type="time" name="hora" value="08:00" min="07:00" max="18:00">
+   <hr>
+   <label for="cor">Cor</label>
+   <input type="color" name="cor" id="cor">
+   <hr>
+   <input type="submit" value="Enviar">
+   <input type="reset" value="Limpar">
     </form>
-    
 </body>
-</html>

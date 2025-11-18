@@ -1,26 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flexbox</title>
+<link rel="stylesheet" href="style.css">
+</head>
 <body>
-    <form method="get">
-    <label for="numero">Número</label>
-    <input type="number" name="numero" min="5" max="10" value="3"
-     required autofocus>
-   <label for="telefone">Telefone</label>
-   <input type="tel" name="telefone" id="telefone">
-   <hr>
-   <label for="datanascimento">Data de Nascimento</label>
-   <input type="date" name="datanascimento" id="datanascimento" min="1970-01-01">
-   <br>
-   <label for="dataehora">Data e Hora</label>
-   <input type="datetime-local" name="dataehora" id="dataehora">
-   <br>
-   <label for="hora">Hora</label>
-   <input type="time" name="hora" value="08:00" min="07:00" max="18:00">
-   <hr>
-   <label for="cor">Cor</label>
-   <input type="color" name="cor" id="cor">
-   <hr>
-   <input type="submit" value="Enviar">
-   <input type="reset" value="Limpar">
-    </form>
+<h1>Trabalhando com container e itens Flexbox</h1>
+<div class="container">
+<div class="item red">1</div>
+<div class="item green">2</div>
+<div class="item blue">3</div>
+<div class="item">4</div>
+</div>
+<div class="container container02">
+<div class="item red item01">1</div>
+<div class="item green item02">2</div>
+<div class="item blue">3</div>
+<div class="item ">4</div>
+</div>
 </body>
+</html>

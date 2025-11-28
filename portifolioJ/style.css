@@ -1,0 +1,137 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: #2c3e50;
+}
+
+/* Cabeçalho */
+.header {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Seção Sobre */
+.sobre {
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.sobre h2 {
+    font-size: 2rem;
+}
+
+.sobre p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+/* Seção Projetos */
+.projetos {
+    padding: 50px;
+    background-color: #ecf0f1;
+    text-align: center;
+}
+
+.projetos h2 {
+    font-size: 2rem;
+}
+
+.projeto {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.projeto h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.projeto a {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.projeto a:hover {
+    background-color: #2980b9;
+}
+
+/* Seção Contato */
+.contato {
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.contato h2 {
+    font-size: 2rem;
+}
+
+.contato p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+/* Rodapé */
+.footer {
+    text-align: center;
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+    .projeto {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 15px;
+    }
+
+    .projeto {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

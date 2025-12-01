@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu de Cafés</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="menu-container">
+        <div class="card expresso">
+            <h3>Café Expresso</h3>
+            <p>Intenso e encorpado. O clássico da cafeteria.</p>
+        </div>
+
+        <div class="card cappuccino">
+            <h3>Cappuccino</h3>
+            <p>O equilíbrio perfeito entre café, leite e espuma cremosa.</p>
+        </div>
+
+        <div class="card latte">
+            <h3>Latte</h3>
+            <p>Leite vaporizado com um toque suave de café.</p>
+        </div>
+
+        <div class="card mocha">
+            <h3>Mocha</h3>
+            <p>Café, leite e um toque de chocolate para um sabor irresistível.</p>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5; /* Fundo suave */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-container {
+    /* Usando Grid para o layout principal (3 colunas com espaço) */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px; /* Espaço entre os cartões */
+    max-width: 1000px;
+    width: 100%;
+}
+
+.card {
+    background-color: #ffffff; /* Fundo do cartão branco */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    min-height: 120px; /* Altura mínima para alinhamento */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Efeito de elevação ao passar o mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    color: #38220f; /* Cor marrom escura para títulos */
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+.card p {
+    color: #6c584c; /* Cor do texto mais suave */
+    font-size: 0.9em;
+}
+
+/* Estilos de fundo para diferenciar os cartões (opcional) */
+.expresso {
+    background-color: #e0e0e0;
+}
+.cappuccino {
+    background-color: #f0f0f0;
+}
+.latte {
+    background-color: #e8e8e8;
+}
+.mocha {
+    /* Como o Mocha está numa linha separada na imagem, 
+    ajustamos a coluna dele para ocupar o centro da linha. */
+    background-color: #f5f5f5;
+    grid-column: span 1; /* Garante que ocupe apenas 1 coluna */
+}
+
+/* Media Query para telas menores - 1 coluna */
+@media (max-width: 768px) {
+    .menu-container {
+        grid-template-columns: 1fr;
+    }
+}

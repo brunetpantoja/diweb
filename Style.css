@@ -1,0 +1,211 @@
+/* Variáveis de Cores */
+root {
+    --cor-primaria: #6d4c41; /* Marrom escuro do texto principal e rodapé */
+    --cor-secundaria: #efebe9; /* Fundo dos cartões de café */
+    --cor-acento: #a1887f; /* Borda ou acento sutil */
+    --cor-texto-claro: #ffffff;
+    --cor-texto-escuro: #3e2723; /* Quase preto/marrom muito escuro */
+    --cor-destaque-botao: #c62828; /* Vermelho do botão "Ver Menu" */
+}
+
+/* Reset Básico e Fontes */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--cor-texto-escuro);
+    line-height: 1.6;
+}
+
+/* --- Cabeçalho Superior (Links Administrativos) --- */
+.top-header {
+    background-color: var(--cor-texto-escuro);
+    color: var(--cor-texto-claro);
+    padding: 5px 0;
+    text-align: right;
+    font-size: 0.8rem;
+}
+
+.top-header a {
+    color: var(--cor-texto-claro);
+    text-decoration: none;
+    margin-left: 15px;
+    padding-right: 20px;
+}
+
+/* --- Menu de Navegação Principal --- */
+.navbar {
+    background-color: var(--cor-texto-claro);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--cor-primaria);
+}
+
+.logo-box {
+    background-color: var(--cor-texto-escuro);
+    color: var(--cor-texto-claro);
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--cor-texto-escuro);
+    margin-left: 20px;
+    padding: 5px 0;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--cor-destaque-botao);
+}
+
+/* --- Seção Area (Banner) --- */
+.hero-banner {
+    background-image:url(htps://via.placeholder.com/1200x250/3e2723/ffffff?text=Fundo+de+Graos+de+Cafe); /* URL de placeholder para o fundo de café */
+    background-size: cover;
+    background-position: center;
+    padding: 50px 20px;
+    color: var(--cor-texto-claro);
+    text-align: center;
+}
+
+.area-content {
+    background-color: rgba(0, 0, 0, 0.4); /* Overlay escuro para legibilidade do texto */
+    padding: 20px;
+    display: inline-block; /* Ajusta o fundo para o tamanho do conteúdo */
+}
+
+.area-banner h1 {
+    font-size: 2.2rem;
+    margin-bottom: 5px;
+}
+
+.are-banner p {
+    font-size: 1.1rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.btn-menu {
+    background-color: var(--cor-destaque-botao);
+    color: var(--cor-texto-claro);
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+    display: inline-block;
+}
+
+.btn-menu:hover {
+    background-color: #e53935;
+}
+
+/* --- Conteúdo Principal (Cards de Menu e Seções) --- */
+.container {
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+/* --- Grid de Produtos (Menu) --- */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 colunas como na imagem */
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.product-card {
+    background-color: var(--cor-secundaria);
+    border: 1px solid var(--cor-acento);
+    text-align: center;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.product-card h4 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.product-card p {
+    font-size: 0.85rem;
+    margin: 5px 0 0;
+    color: #5d4037;
+}
+
+/* placeholders para as imagens */
+.placeholder-image {
+    width: 100%;
+    height: 100px; /* Altura fixa para simular a proporção */
+    background-color: #8d6e63; /* Cor que lembra café com leite */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--cor-texto-claro);
+    font-size: 0.75rem;
+    text-align: center;
+}
+
+.section-header {
+    margin: 40px 0 20px;
+    font-size: 1.5rem;
+    color: var(--cor-primaria);
+    font-weight: normal;
+}
+
+/* Estilização específica do bloco "Sobre a Cafeteria" */
+.about-section p {
+    text-align: left;
+    padding-right: 200px; /* Simula a largura do texto na imagem */
+}
+
+/* --- Bloco de Contato --- */
+.contact-section {
+    margin-top: 40px;
+}
+
+.contact-details {
+    display: inline-block;
+    background-color: var(--cor-texto-claro);
+    padding: 10px;
+    text-align: left;
+}
+
+.contact-details p {
+    margin: 5px 0;
+    font-size: 0.95rem;
+}
+
+/* --- Rodapé --- */
+.footer {
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto-claro);
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9rem;
+    margin-top: 50px;
+}

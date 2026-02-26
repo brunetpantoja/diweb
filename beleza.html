@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Glow Book</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">Glow Book ✨</div>
+    <nav>
+        <a href="#">Início</a>
+        <a href="#">Serviços</a>
+        <a href="#">Sobre</a>
+        <a href="#">Contato</a>
+        <button class="btn-login">Entrar</button>
+        <button class="btn-cadastro">Cadastro</button>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Encontre Profissionais de Beleza a Domicílio</h1>
+    <p>Beleza e bem-estar no conforto da sua casa</p>
+
+    <form action="buscar.php" method="POST" class="busca">
+        <select name="servico">
+            <option>Selecione o Serviço</option>
+            <option>Cabelo</option>
+            <option>Manicure</option>
+            <option>Barbearia</option>
+        </select>
+
+        <input type="text" name="localizacao" placeholder="Sua Localização">
+        <input type="date" name="data">
+
+        <button type="submit">Buscar</button>
+    </form>
+</section>
+
+<section class="destaque">
+    <h2>Profissionais em Destaque</h2>
+
+    <div class="cards">
+        <div class="card">
+            <img src="https://via.placeholder.com/250">
+            <h3>Fernanda Silva</h3>
+            <p>⭐ 4.9</p>
+            <button>Ver Perfil</button>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/250">
+            <h3>Lucas Pereira</h3>
+            <p>⭐ 4.9</p>
+            <button>Ver Perfil</button>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/250">
+            <h3>Ana Costa</h3>
+            <p>⭐ 4.9</p>
+            <button>Ver Perfil</button>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Glow Book - Todos os direitos reservados</p>
+</footer>
+
+</body>
+</html>

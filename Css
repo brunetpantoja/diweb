@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, #2e0d47, #4b1a6b);
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    background: rgba(0,0,0,0.2);
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 0 0 10px #c77dff;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+}
+
+button {
+    padding: 8px 15px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-login {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+.btn-cadastro {
+    background: #9d4edd;
+    color: white;
+}
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 40px;
+}
+
+.busca {
+    margin-top: 30px;
+}
+
+.busca input, .busca select {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 8px;
+    border: none;
+}
+
+.busca button {
+    background: #c77dff;
+    color: white;
+}
+
+.destaque {
+    padding: 60px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.card {
+    background: rgba(255,255,255,0.1);
+    padding: 20px;
+    border-radius: 15px;
+    width: 250px;
+    box-shadow: 0 0 20px rgba(199,125,255,0.4);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card button {
+    background: #9d4edd;
+    margin-top: 10px;
+    color: white;
+}
